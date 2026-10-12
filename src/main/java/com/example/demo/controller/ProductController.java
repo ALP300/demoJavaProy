@@ -15,8 +15,11 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 @RestController
 @RequestMapping("/products")
+@CrossOrigin(origins = "*")
 @Tag(name = "Productos", description = "Endpoints para la gestión completa del catálogo de productos")
 public class ProductController {
 
